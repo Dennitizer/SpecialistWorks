@@ -14,12 +14,12 @@ while True:
 for i in range(len(hour)):
 	hour[i] = int(hour[i])
 sumhour = (sum(hour))
-print(sumhour)
+#print(sumhour)
 
 for i in range(len(min)):
 	min[i] = int(min[i])
 summin= sum(min)
-print(summin)
+#print(summin)
 while summin >= 60:
 	summin = summin - 60
 	sumhour = sumhour + 1
@@ -30,4 +30,4 @@ formin = (summin * 1.66)
 formin = int(math.ceil(formin))
 formin = (format(formin, '02d'))
 #print(sumhour,':',formin)
-print('worked hourhours to fill  = ', sumhour,':',formin)
+print('worked hours to fill in = ', sumhour,':',formin)
